@@ -13,5 +13,5 @@ import java.util.Optional;
  * This interface contains Competition Repository
  */
 public interface CoachRepository extends JpaRepository<Coach, Long> {
-    Optional<Coach> findByFirstNameAndLastName(String firstName, String lastName);
+
 }
