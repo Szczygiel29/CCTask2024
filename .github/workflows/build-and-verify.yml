@@ -19,4 +19,6 @@ jobs:
           architecture: x64
 
       - name: Run all tests
+        env:
+          JWT_SECRET_KEY: ${{secrets.JWT_SECRET_KEY}}
         run: mvn test -Dspring.profiles.active=test
